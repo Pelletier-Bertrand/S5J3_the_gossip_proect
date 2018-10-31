@@ -1,0 +1,9 @@
+<h1 class="text-center"><u>Ajouter un nouveau gossip</u></h1> <br>
+<%= form_for @gossip, url: {action: "create"} do |f| %>
+<div class="container" >
+  <%= f.text_field :title, class: "form-control", placeholder: "titre" %>
+  <%= f.text_field :content, class: "form-control", placeholder: "contenu" %>
+  <%= f.text_field :anonymous_gossiper, class: "form-control", placeholder: "ton blaze" %>
+  <%= f.submit "Créer un gossip", class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<h1 class="text-center"><u>Modifier ce gossip</u></h1> <br>
+<%= form_for @gossip, url: {action: "update"} do |f| %>
+<div class="container" >
+  <%= f.text_field :content, class: "form-control", placeholder: "content" %>
+  <%= f.text_field :anonymous_gossiper, class: "form-control", placeholder: "ton blaze" %>
+  <%= f.submit "Modifier ce gossip", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+
+
+<!--
+<a href="<%= gossip_path(@gossip.id) %>" class="btn btn-danger" data-confirm="ARE YOU SURE ?"
+data_method="delete">Clique pour détruire</a> -->
