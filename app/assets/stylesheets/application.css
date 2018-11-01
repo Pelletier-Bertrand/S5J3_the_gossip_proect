@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+ .container{
+   width: 50%;
+   margin: 0 auto;
+
+  }
+ .card{
+   margin: 50px auto;
+   float: none;
+
+ }
+ .form-control{
+   border-color: red;
+   width: 500px;
+ }
+.gossip1{
+  width: 50%;
+  margin: 0 auto;
+}
