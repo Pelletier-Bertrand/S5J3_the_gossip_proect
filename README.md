@@ -31,7 +31,7 @@ rails console
 
 * Max Beaufils
 * Rebecca Bossé
-* Camille Dublois
+* Camille Deblois
 * Iliès El Ouartassi
 * Bertrand Pelletier
 * Rauana Roupsard
