@@ -24333,3 +24333,21 @@ Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
 >>>>>>> 6893c4f2d876376d0a49f27903a0ca6615ee353b
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-01 19:55:49 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 165ms (Views: 159.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-01 19:57:04 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 282ms (Views: 280.3ms | ActiveRecord: 0.0ms)
+
+
