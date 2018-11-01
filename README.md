@@ -1,24 +1,47 @@
-# README
+# 🙊The Gossip Project🙊
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 💾Présentation de l'application💾
 
-Things you may want to cover:
+Cette superbe application permet aux moussaillons de commérer sur leurs co-moussaillons. 
+Voici le lien de l'application en prod sur heroku "------------------------------"
 
-* Ruby version
+## 💽Comment utiliser le programme ? 💽
 
-* System dependencies
+Cloner le repo, puis entre les commandes suivantes pour préparer le programme
 
-* Configuration
+```
+cd S5J3_the_gossip_proect
+bundle install
+rails db:migrate
+rails server
+rails console
+```
 
-* Database creation
+## 🎉Contenu de l'application🎉
 
-* Database initialization
+* Création d'un utilisateur
+* Ecran de connexion avec nom de l'utilisateur et mot de passe
+* Possibilité de liker les gossips
+* Possibilité d'enlever les likes
+*Possiblité de commenter
 
-* How to run the test suite
+## 🌈Team Caen🌈
 
-* Services (job queues, cache servers, search engines, etc.)
+* Max Beaufils
+* Rebecca Bossé
+* Camille Dublois
+* Iliès El Ouartassi
+* Bertrand Pelletier
+* Rauana Roupsard
+* Charlotte Vaudour
 
-* Deployment instructions
+![alt text](https://media.shoko.fr/article-3574479-head-f4/gossip-girl.jpg)
 
-* ...
+![alt text](https://media.giphy.com/media/661poXc3NplhC/giphy.gif)
+
+
+
+
+
+
+
