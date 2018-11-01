@@ -1,5 +1,7 @@
 # 🙊The Gossip Project🙊
 
+OXOXOXOXOXOXOXOXOXO![alt text](https://media.giphy.com/media/661poXc3NplhC/giphy.gif)OXOXOXOXOXOXOXOXOXOXOXOXOXOXOXO
+
 ## 💾Présentation de l'application💾
 
 Cette superbe application permet aux moussaillons de commérer sur leurs co-moussaillons. 
@@ -37,7 +39,7 @@ rails console
 
 ![alt text](https://media.shoko.fr/article-3574479-head-f4/gossip-girl.jpg)
 
- sssssssssssssssssssssssss![alt text](https://media.giphy.com/media/661poXc3NplhC/giphy.gif)
+
 
 
 
