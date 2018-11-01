@@ -3,7 +3,14 @@
 <q><%=Gossip.find(@id).content%></q><br>
 <p>Date de création: <%=Gossip.find(@id).created_at%></p>
 <a href="<%= edit_gossip_path(@id) %>" class="btn btn-primary">Editer</a>
+
+
 <h2>Like :</h2>
+<%= form_with(model: [ @gossip, @gossip.likes.build ], local: true) do |form| %>
+    <%= form.submit %>
+<% end %>
+<%= link_to 'Clique pour dislike', gossip_like_path(@id), method: :delete, class:"btn btn-danger",
+data: { confirm: "ARE YOU SURE ????"} %>
 <p>Nombre de like(s)</p>
 <%= Gossip.find(@id).likes.count%>
 

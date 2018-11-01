@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   resources :registrations, only: [:new, :create]
   resources :users, only: [:new, :create]
   resources :gossips do
+    resources :likes
+  end
+  resources :gossips do
     resources :comments
-  
   end
 end
