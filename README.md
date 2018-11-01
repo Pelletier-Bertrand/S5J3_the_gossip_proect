@@ -1,6 +1,6 @@
 # 🙊The Gossip Project🙊
 
-OXOXOXOXOXOXOXOXO![alt text](https://media.giphy.com/media/661poXc3NplhC/giphy.gif)OXOXOXOXOXO
+OXOXOXOXOXOXOXOXO![alt text](https://media.giphy.com/media/661poXc3NplhC/giphy.gif)OXOXOXOXOXOXOXOXO
 
 ## 💾Présentation de l'application💾
 
