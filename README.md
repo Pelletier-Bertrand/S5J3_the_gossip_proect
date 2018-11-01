@@ -5,7 +5,7 @@ OXOXOXOXOXOXOXOXO![alt text](https://media.giphy.com/media/661poXc3NplhC/giphy.g
 ## 💾Présentation de l'application💾
 
 Cette superbe application permet aux moussaillons de commérer sur leurs co-moussaillons. 
-Voici le lien de l'application en prod sur heroku "------------------------------"
+Voici le lien de l'application en prod sur heroku "https://the-gossip-project-caen.herokuapp.com"
 
 ## 💽Comment utiliser le programme ? 💽
 
@@ -25,7 +25,7 @@ rails console
 * Ecran de connexion avec nom de l'utilisateur et mot de passe
 * Possibilité de liker les gossips
 * Possibilité d'enlever les likes
-*Possiblité de commenter
+* Possiblité de commenter
 
 ## 🌈Team Caen🌈
 
