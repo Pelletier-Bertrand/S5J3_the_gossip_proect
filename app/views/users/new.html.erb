@@ -1,0 +1,9 @@
+<h1 class="text-center"><u>Sign in</u></h1> <br>
+<%= form_for @user, url: {action: "create"} do |f| %>
+<div class="container" >
+  <%= f.text_field :name, class: "form-control", placeholder: "name" %>
+  <%= f.text_field :email, class: "form-control", placeholder: "email" %>
+  <%= f.text_area :password, class: "form-control", placeholder: "password" %>
+  <%= f.submit "Create User", class: "btn btn-primary" %>
+  </div>
+<% end %>

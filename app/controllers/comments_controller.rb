@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
+ 
   def create
     @gossip = Gossip.find(params[:gossip_id])
     @comments = @gossip.comments.create(comment_params)

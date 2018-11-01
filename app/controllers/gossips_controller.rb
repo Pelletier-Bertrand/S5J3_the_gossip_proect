@@ -6,9 +6,11 @@ class GossipsController < ApplicationController
     @gossip = Gossip.new
   end
   def create 
-    @gossip = Gossip.create('title' => params.require(:gossip)[:title],
-                    'content' => params.require(:gossip)[:content],
-                    'anonymous_gossiper' => params.require(:gossip)[:anonymous_gossiper])
+    if $curent_user != nil
+      @gossip = Gossip.create('title' => params.require(:gossip)[:title],
+                      'content' => params.require(:gossip)[:content],
+                      'user_id' => User.find_by(name: "#{$curent_user}").id)
+    end
    redirect_to gossips_path
   end
   def show
@@ -17,8 +19,13 @@ class GossipsController < ApplicationController
    
   end
   def destroy
-    @gossip = Gossip.find(params[:id])
-    @gossip.destroy
+    if $curent_user != nil
+      @gossip = Gossip.find(params[:id])
+      if @gossip.user_id == (User.find_by(name: "#{$curent_user}").id)
+        @gossip.destroy
+      else 
+      end
+    end
     redirect_to gossips_path
   end
   def update

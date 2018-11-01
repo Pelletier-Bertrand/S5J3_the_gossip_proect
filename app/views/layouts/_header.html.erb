@@ -5,7 +5,14 @@
         <li><%= link_to "Accueil",   '/' %></li>
         <li><%= link_to "Index des gossips",   '/gossips' %></li>
         <li><%= link_to "Nouveau gossip", '/gossips/new' %></li>
-      </ul>
+         <li><%= link_to "Log in", '/registrations/new' %></li> 
+         <li><%= link_to "Sign in", '/users/new' %></li>   
+      
+      <%if $curent_user == nil then %> <p></p>
+      <%else%>
+      <p>Bonjour <%=$curent_user%> </p>
+       <%end%>
+        </ul>
     </nav>
   </div>
 </header>
