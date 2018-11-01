@@ -1,18 +1,25 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Accueil",   '/' %></li>
-        <li><%= link_to "Index des gossips",   '/gossips' %></li>
-        <li><%= link_to "Nouveau gossip", '/gossips/new' %></li>
-         <li><%= link_to "Log in", '/registrations/new' %></li> 
-         <li><%= link_to "Sign in", '/users/new' %></li>   
-      
+<nav class="navbar navbar-expand navbar-dark fixed-top bg-info">
+  <a class="navbar-brand" href="/">Accueil</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarsExample02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/gossips">Index des gossips <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/gossips/new">Nouveaux gossips <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/registrations/new">Login <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/users/new">Sign In <span class="sr-only">(current)</span></a>
+        </li>
       <%if $curent_user == nil then %> <p></p>
       <%else%>
-      <p>Bonjour <%=$curent_user%> </p>
+      <p class="text-danger">Bonjour <%=$curent_user%> </p>
        <%end%>
-        </ul>
+
     </nav>
-  </div>
-</header>

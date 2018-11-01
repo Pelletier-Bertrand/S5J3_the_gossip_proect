@@ -1,3 +1,4 @@
+<body class= "gossip1 jumbotron">
 <h2><%=Gossip.find(@id).anonymous_gossiper%></h2> <br>
 <h2><%=Gossip.find(@id).title%></h2> <br>
 <q><%=Gossip.find(@id).content%></q><br>
@@ -59,3 +60,4 @@ data: { confirm: "ARE YOU SURE ????"} %>
 <%= link_to 'Clique pour détruire', gossip_path(@id), method: :delete, class:"btn btn-danger",
 data: { confirm: "ARE YOU SURE ????"} %>
 <%= link_to "> Voir tous les Gossips", gossips_path %>
+</body>

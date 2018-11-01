@@ -1,9 +1,9 @@
-<h1 class="text-center"><u>Sign in</u></h1> <br>
+<br><h1 class="text-center text-danger">🖱Sign in🖱</h1> <br>
 <%= form_for @user, url: {action: "create"} do |f| %>
-<div class="container" >
-  <%= f.text_field :name, class: "form-control", placeholder: "name" %>
-  <%= f.text_field :email, class: "form-control", placeholder: "email" %>
-  <%= f.text_area :password, class: "form-control", placeholder: "password" %>
-  <%= f.submit "Create User", class: "btn btn-primary" %>
+<div class="container jumbotron" >
+  <%= f.text_field :name, class: "form-control", placeholder: "name" %><br>
+  <%= f.text_field :email, class: "form-control", placeholder: "email" %><br>
+  <%= f.text_area :password, class: "form-control", placeholder: "password" %><br>
+  <%= f.submit "Create User", class: "btn btn-warning" %>
   </div>
 <% end %>

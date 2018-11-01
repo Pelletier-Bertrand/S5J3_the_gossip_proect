@@ -1,9 +1,9 @@
-<h1 class="text-center"><u>Modifier ce gossip</u></h1> <br>
+<h1 class="text-center text-danger">Modifier ce gossip</h1> <br>
 <%= form_for @gossip, url: {action: "update"} do |f| %>
-<div class="container" >
-  <%= f.text_field :content, class: "form-control", placeholder: "content" %>
-  <%= f.text_field :anonymous_gossiper, class: "form-control", placeholder: "ton blaze" %>
-  <%= f.submit "Modifier ce gossip", class: "btn btn-primary" %>
+<div class="container jumbotron" >
+  <%= f.text_field :content, class: "form-control", placeholder: "content" %><br>
+  <%= f.text_field :anonymous_gossiper, class: "form-control", placeholder: "ton blaze" %><br>
+  <%= f.submit "Modifier ce gossip", class: "btn btn-warning" %><br>
   </div>
 <% end %>
 

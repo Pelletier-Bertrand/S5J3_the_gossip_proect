@@ -1,7 +1,10 @@
 <%@gossips.each do |gossips| %>
+<div class="center jumbotron">
 <div class="card" style="width: 18rem;">
 <h5 class="card-title"><%= gossips.title %></h5>
 <p class="card-text">><%= gossips.content %></p>
 <p class="card-text">><%= gossips.anonymous_gossiper %></p>
-<a href="<%= gossip_path(gossips.id) %>" class="btn btn-primary">Lien</a>
+<a href="<%= gossip_path(gossips.id) %>" class="btn btn-warning">🌊Lien🌊</a>
 <%end%>
+</div>
+</div>
