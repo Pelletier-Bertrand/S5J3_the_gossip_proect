@@ -36,9 +36,9 @@ rails console
 * Charlotte Vaudour
 
 ![alt text](https://media.shoko.fr/article-3574479-head-f4/gossip-girl.jpg)
-<p align="center">
- ![alt text](https://media.giphy.com/media/661poXc3NplhC/giphy.gif)
-</p>
+
+ sssssssssssssssssssssssss![alt text](https://media.giphy.com/media/661poXc3NplhC/giphy.gif)
+
 
 
 
