@@ -12,6 +12,7 @@ class GossipsController < ApplicationController
    redirect_to gossips_path
   end
   def show
+    @gossip = Gossip.find(params[:id])
     @id= params[:id]
    
   end
@@ -28,6 +29,7 @@ class GossipsController < ApplicationController
   def edit
     @gossip = Gossip.find(params[:id])
   end 
+  private
   def gossip_params
     params.require(:gossip).permit(:content, :anonymous_gossiper)
   end

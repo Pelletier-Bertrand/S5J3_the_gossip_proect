@@ -2,8 +2,47 @@
 <h2><%=Gossip.find(@id).title%></h2> <br>
 <q><%=Gossip.find(@id).content%></q><br>
 <p>Date de création: <%=Gossip.find(@id).created_at%></p>
-
 <a href="<%= edit_gossip_path(@id) %>" class="btn btn-primary">Editer</a>
+
+
+<h2>Commentaires</h2>
+
+   <table>
+     <thead>
+     </thead>
+
+     <tbody>
+       <tr>
+         <td>auteur</td> <td>Contenu</td> <td>Lien vers le comm'</td>
+       </tr>
+       <% @gossip.comments.each do |comment|%>
+       <tr>
+         <td><%= comment.anonymous_commentor %></td>
+         <td><%= comment.content%></td>
+         <td><%= link_to "Editer le com", edit_gossip_comment_path(comment.id) %></td>
+       </tr>
+       <% end %>
+     </tbody>
+   </table>
+
+   <%= link_to "Retour à l'Accueil", '/' %>
+
+
+
+<h2>Ajouter un commentaire:</h2>
+<%= form_with(model: [ @gossip, @gossip.comments.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :anonymous_commentor %><br>
+    <%= form.text_field :anonymous_commentor %>
+  </p>
+  <p>
+    <%= form.label :content%><br>
+    <%= form.text_area :content %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
 
 
 <%= link_to 'Clique pour détruire', gossip_path(@id), method: :delete, class:"btn btn-danger",
